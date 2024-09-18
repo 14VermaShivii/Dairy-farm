@@ -4,7 +4,7 @@ body{
     -moz-osx-font-smoothing:grayscale;
 }
 .Hero{
-    background-image: url(../public/images/Animal2.jpg);
+    /* background-image: url(../public/images/Animal2.jpg); */
     /* width: 100%; */
     height: 1%;
     background-position: center;
@@ -146,7 +146,24 @@ overflow: hidden;
   .padding-img{
     padding: 0 0 15px 15px;
   }
-  .margin-img{
+  /* .margin-img{
     margin: 0 0 0 -15px;
-  }
+  } */
+   .port-overlay-count{
+    padding: 50px;
+    padding-top: 20px;
+   }
+   .port-overlay-count{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+   .port-title-count a h3{
+    color: #f1f1f1;
+   }
   
