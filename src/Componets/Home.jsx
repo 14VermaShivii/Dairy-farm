@@ -8,7 +8,7 @@ export const Home = () => {
                 <div className="row">
                     <div className="container-fluid">
                         <div className=" container-fluid Hero">
-                            {/* <img src={Animal2} width={1500} height={600} /> */}
+                            {/* <img src="../public/images/Animal2.jpg" /> */}
                         </div>
                     </div>
                 </div>
@@ -291,10 +291,50 @@ export const Home = () => {
             {/* ***************** */}
             <section id="Products">
                 {/* product-1  */}
-                <div className="row">
-                    <div className=" Page-section mt-80">
+                <div className="row py-5 px-4">
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
                         <div className="padding-img margin-img">
                             <img src="../public/images/prod-1.jpg" />
+                            <div className="port-overlay-count">
+                                <div className="port-title-count">
+                                    <h3>Organic Milk</h3>
+                                    <a>100 Natural</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* product-2  */}
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                        <div className="padding-img margin-img">
+                            <img src="../public/images/prod-2.jpg" />
+                        </div>
+                    </div>
+
+                    {/* product-3  */}
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                        <div className="padding-img margin-img">
+                            <img src="../public/images/prod-3.jpg" />
+                        </div>
+                    </div>
+                </div>
+                {/* product-4  */}
+                <div className="row px-4">
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                        <div className="padding-img margin-img">
+                            <img src="../public/images/prod-4.jpg" />
+                        </div>
+                    </div>
+                    {/* product-5  */}
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                        <div className="padding-img margin-img">
+                            <img src="../public/images/prod-5.jpg" />
+                        </div>
+                    </div>
+                    {/* product-6  */}
+                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                        <div className="padding-img margin-img">
+                            <img src="../public/images/prod-6.jpg" />
                         </div>
                     </div>
                 </div>
