@@ -21,11 +21,11 @@ export const Home = () => {
         <>
             <section id="Hero">
                 <div className="row">
-                    <div className="container-fluid">
+                    {/* <div className="container-fluid"> */}
                         <div className=" container-fluid Hero">
                             {/* <img src="../public/images/Animal2.jpg" /> */}
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
             </section>
             {/* //************************* */}
