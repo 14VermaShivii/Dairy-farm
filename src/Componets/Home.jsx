@@ -1,7 +1,22 @@
 import React from "react";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faLock, faUser } from "@fortawesome/free-solid-svg-icons"
+import { NavLink } from "react-router-dom"
+import { useFormik } from "formik"
+import { loginschema } from ".";
 // import Animal5 from "../../public/images/Animal5"
 
 export const Home = () => {
+    const initialValues = {
+        email: "",
+        password: ""
+    };
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+
+        useFormik({
+            initialValues: initialValues,
+            validationSchema: loginschema,
+        })
     return (
         <>
             <section id="Hero">
@@ -292,7 +307,7 @@ export const Home = () => {
             <section id="Products">
                 {/* product-1  */}
                 <div className="row py-5 px-4">
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                    <div className="col-lg-4 Page-section mt-80">
                         <div className="padding-img margin-img">
                             <img src="../public/images/prod-1.jpg" />
                             <div className="port-overlay-count">
@@ -305,14 +320,14 @@ export const Home = () => {
                     </div>
 
                     {/* product-2  */}
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                    <div className="col-lg-4 col-sm-6 Page-section mt-80">
                         <div className="padding-img margin-img">
                             <img src="../public/images/prod-2.jpg" />
                         </div>
                     </div>
 
                     {/* product-3  */}
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                    <div className="col-lg-4 col-sm-6 Page-section mt-80">
                         <div className="padding-img margin-img">
                             <img src="../public/images/prod-3.jpg" />
                         </div>
@@ -320,7 +335,7 @@ export const Home = () => {
                 </div>
                 {/* product-4  */}
                 <div className="row px-4">
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
+                    <div className="col-md-4 col-sm-6 Page-section mt-80">
                         <div className="padding-img margin-img">
                             <img src="../public/images/prod-4.jpg" />
                         </div>
@@ -339,6 +354,61 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className="row">
+                <div className="col-md-6 px-5 py-5
+                
+                background">
+                    <div className='wrapper'>
+                        <form onSubmit={handleSubmit} action="">
+
+
+                            <h1>Login</h1>
+                            <div className="input-box">
+                                <input
+                                    type="text"
+                                    placeholder="Email"
+                                    required
+                                    autoComplete="off"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+
+                                />
+                                {/* <FontAwesomeIcon icon={faUser} /> */}
+                            </div>
+                            {errors.email && touched.email ? (
+                                <p className="form-error">{errors.email}</p>
+                            ) : null}
+                            <div className="input-box">
+
+                                <input
+                                    type="Password"
+                                    placeholder="Password"
+                                    required
+                                    autoComplete="off"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                                {/* <FontAwesomeIcon icon={faLock} /> */}
+                            </div>
+                            <div className="remember-forgot">
+                                <label><input type="checkbox" />Remember me</label>
+                                <NavLink to="/Forgotpassword">Forgot Password ?</NavLink>
+                            </div>
+                            <button type="submit">Login</button>
+                            <div className="signup-link">
+                                <p>Don't have a account ?<NavLink to="/Signup">signup</NavLink></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div className="col-md-6">
+
+                </div>
+            </div>
+
+
         </>
     )
 }
