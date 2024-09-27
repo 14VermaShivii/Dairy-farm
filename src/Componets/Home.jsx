@@ -22,9 +22,9 @@ export const Home = () => {
             <section id="Hero">
                 <div className="row">
                     {/* <div className="container-fluid"> */}
-                        <div className=" container-fluid Hero">
-                            {/* <img src="../public/images/Animal2.jpg" /> */}
-                        </div>
+                    <div className=" container-fluid Hero">
+                        {/* <img src="../public/images/Animal2.jpg" /> */}
+                    </div>
                     {/* </div> */}
                 </div>
             </section>
@@ -34,10 +34,10 @@ export const Home = () => {
                     <div className="col-md-4  ">
                         <div className="card card-effect">
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a to="#" className="card-link">Card link</a>
+                                <h5 className="card-title">About Dairy farm</h5>
+                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                <p className="card-text">Dairy farming is a form of agriculture that is dedicated to the production of milk and dairy products from the care and feeding of cattle, mainly dairy cows.</p>
+                                <a to="#" className="card-link">Dairy farm</a>
                                 <a to="#" className="card-link">Another link</a>
                             </div>
                         </div>
@@ -46,10 +46,10 @@ export const Home = () => {
                     <div className="col-md-4">
                         <div className="card card-effect">
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a to="#" className="card-link">Card link</a>
+                                <h5 className="card-title">Market Dairy</h5>
+                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                <p className="card-text">Diversifying product offerings, establishing unique selling propositions, and implementing effective pricing strategies are essential in establishing dairy .</p>
+                                <a to="#" className="card-link">Market Dairy</a>
                                 <a to="#" className="card-link">Another link</a>
                             </div>
                         </div>
@@ -57,10 +57,10 @@ export const Home = () => {
                     <div className="col-md-4">
                         <div className="card card-effect">
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a to="#" className="card-link">Card link</a>
+                                <h5 className="card-title">Dairy farm importance</h5>
+                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                <p className="card-text">Dairy production provides many non-marketed economic benefits, including manure for use on-farm as fuel or organic fertilizer </p>
+                                <a to="#" className="card-link">Dairy farm importance</a>
                                 <a to="#" className="card-link">Another link</a>
                             </div>
                         </div>
@@ -70,13 +70,13 @@ export const Home = () => {
             {/* ********************** */}
             <section id="Info">
                 <div className="row">
-                    <div className="col-md-4 py-3 px-5 bottle">
+                    <div className="col-md-4 col-sm-4 py-3 px-5 bottle">
                         <img src="../public/images/milk.png" />
 
                     </div>
                     {/* </div> */}
                     {/* <div className="row"> */}
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-sm-8">
 
                         <h1>FRESH MILK</h1>
                         <h1>
@@ -107,7 +107,7 @@ export const Home = () => {
                                     their health <br />is maintained very well.
                                 </p>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 ">
                                 <h3>UNPROCESSED MILK  </h3>
                                 <p>We believe in consuming fresh milk. It<br /> tastes better and rich in vitamins and<br /> minerals
                                     compared to processed milk.
@@ -354,6 +354,7 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
+            {/* ************* */}
             <div className="row">
                 <div className="col-md-6 px-5 py-5
                 
@@ -404,6 +405,20 @@ export const Home = () => {
 
 
                 <div className="col-md-6">
+                    <div className="Map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55456.68148733089!2d75.42827526922721!3d22.193671920488622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39626e6050c0415d%3A0xd7792719ab9bbf98!2sAdarsh%20Gram%20Bikhron%2C%20Madhya%20Pradesh%20454552!5e0!3m2!1sen!2sin!4v1727438613659!5m2!1sen!2sin" ></iframe>
+                    </div>
+                </div>
+            </div>
+            {/* ************* */}
+            <div className="Footer py-4">
+                <div className="col-md-4 footer">
+
+ghgh
+                bnvnvn
+
+                </div>
+                <div className="col-md-3">
 
                 </div>
             </div>
