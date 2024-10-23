@@ -356,13 +356,9 @@ export const Home = () => {
             </section>
             {/* ************* */}
             <div className="row">
-                <div className="col-md-6 px-5 py-5
-                
-                background">
+                <div className="col-md-6 px-5 py-5 background">
                     <div className='wrapper'>
                         <form onSubmit={handleSubmit} action="">
-
-
                             <h1>Login</h1>
                             <div className="input-box">
                                 <input
@@ -372,7 +368,6 @@ export const Home = () => {
                                     autoComplete="off"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-
                                 />
                                 {/* <FontAwesomeIcon icon={faUser} /> */}
                             </div>
@@ -391,6 +386,10 @@ export const Home = () => {
                                 />
                                 {/* <FontAwesomeIcon icon={faLock} /> */}
                             </div>
+                            {errors.password && touched.password ? (
+                                <p className="form-error">{errors.password}</p>
+                            ) : null}
+
                             <div className="remember-forgot">
                                 <label><input type="checkbox" />Remember me</label>
                                 <NavLink to="/Forgotpassword">Forgot Password ?</NavLink>
@@ -411,18 +410,7 @@ export const Home = () => {
                 </div>
             </div>
             {/* ************* */}
-            <div className="Footer py-4">
-                <div className="col-md-4 footer">
-
-ghgh
-                bnvnvn
-
-                </div>
-                <div className="col-md-3">
-
-                </div>
-            </div>
-
+            
 
         </>
     )

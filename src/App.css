@@ -256,6 +256,7 @@ overflow: hidden;
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
+      
       /* position: relative; */
       /* z-index: 2; */
     
@@ -274,4 +275,14 @@ overflow: hidden;
     color:#fff;
     font-weight: 500;
     
+  }
+  .Title{
+  align-items: center;
+      margin-top: 0%;
+      padding: 0%;
+  }
+  .Lastfooter{
+    background-color: #4b4e53;
+    color: #fff;
+    justify-content: end;
   }
