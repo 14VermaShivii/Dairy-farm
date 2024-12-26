@@ -1,13 +1,21 @@
 import React from "react";
+// import Logo2 from '../../public/images/Logo2.jpg'
 export const Header= () =>{
     return(
       
         <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <div className="container-fluid fixed">
-          <a className="navbar-brand" to="#">logo</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img className="navbar-brand " img src="../public/images/Logo2.jpg"/>
+          <p><b>Ghanshyam Dairy Farm</b></p>
+          
+          {/* <div className="Logo"> */}
+            {/* <div className="col-md-2"> */}
+              {/* <img src="../public/images/Logo2.jpg"/> */}
+            {/* </div> */}
+          {/* </div> */}
+          {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className="collapse navbar-collapse justify-contend-end d-flex" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">

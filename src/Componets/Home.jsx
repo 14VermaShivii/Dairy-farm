@@ -1,181 +1,191 @@
-import React from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faLock, faUser } from "@fortawesome/free-solid-svg-icons"
-import { NavLink } from "react-router-dom"
-import { useFormik } from "formik"
-import { loginschema } from ".";
-// import Animal5 from "../../public/images/Animal5"
+import React, { useEffect } from "react"
+import { Login } from "./Login";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 export const Home = () => {
-    const initialValues = {
-        email: "",
-        password: ""
-    };
-    const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useEffect(() => {
+        Aos.init();
+    }, [])
 
-        useFormik({
-            initialValues: initialValues,
-            validationSchema: loginschema,
-        })
     return (
         <>
             <section id="Hero">
+                <div data-aos="flip-up"
+                // data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div className="row">
                     {/* <div className="container-fluid"> */}
-                    <div className=" container-fluid Hero">
+                    <div className="container-fluid Hero">
                         {/* <img src="../public/images/Animal2.jpg" /> */}
                     </div>
                     {/* </div> */}
                 </div>
+                </div>
             </section>
             {/* //************************* */}
             <section id="card">
-                <div className="row py-4 px-3">
-                    <div className="col-md-4  ">
-                        <div className="card card-effect">
-                            <div className="card-body">
-                                <h5 className="card-title">About Dairy farm</h5>
-                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
-                                <p className="card-text">Dairy farming is a form of agriculture that is dedicated to the production of milk and dairy products from the care and feeding of cattle, mainly dairy cows.</p>
-                                <a to="#" className="card-link">Dairy farm</a>
-                                <a to="#" className="card-link">Another link</a>
+                <div data-aos="zoom-in">
+                    <div className="row py-4 ">
+                        {/* <div className="container-fluid "> */}
+                        {/* <div className="row py-4 px-3"> */}
+                        <div className="col-md-4">
+                            <div className="card card-effect" >
+                                <div className="card-body ">
+                                    <h5 className="card-title">About Dairy farm</h5>
+                                    {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                    <p className="card-text">Dairy farming is a form of agriculture that is dedicated to the production of milk and dairy products from the care and feeding of cattle, mainly dairy cows.</p>
+                                    <a to="#" className="card-link">Dairy farm</a>
+                                    <a to="#" className="card-link">Another link</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        {/* </div> */}
 
-                    <div className="col-md-4">
-                        <div className="card card-effect">
-                            <div className="card-body">
-                                <h5 className="card-title">Market Dairy</h5>
-                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
-                                <p className="card-text">Diversifying product offerings, establishing unique selling propositions, and implementing effective pricing strategies are essential in establishing dairy .</p>
-                                <a to="#" className="card-link">Market Dairy</a>
-                                <a to="#" className="card-link">Another link</a>
+                        <div className="col-md-4">
+                            <div className="card card-effect">
+                                <div className="card-body">
+                                    <h5 className="card-title">Market Dairy</h5>
+                                    {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                    <p className="card-text">Diversifying product offerings, establishing unique selling propositions, and implementing effective pricing strategies are essential in establishing dairy .</p>
+                                    <a to="#" className="card-link">Market Dairy</a>
+                                    <a to="#" className="card-link">Another link</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="card card-effect">
-                            <div className="card-body">
-                                <h5 className="card-title">Dairy farm importance</h5>
-                                {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
-                                <p className="card-text">Dairy production provides many non-marketed economic benefits, including manure for use on-farm as fuel or organic fertilizer </p>
-                                <a to="#" className="card-link">Dairy farm importance</a>
-                                <a to="#" className="card-link">Another link</a>
+                        <div className="col-md-4">
+                            <div className="card card-effect">
+                                <div className="card-body">
+                                    <h5 className="card-title">Dairy farm importance</h5>
+                                    {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
+                                    <p className="card-text">Dairy production provides many non-marketed economic benefits, including manure for use on-farm as fuel or organic fertilizer </p>
+                                    <a to="#" className="card-link">Dairy farm importance</a>
+                                    <a to="#" className="card-link">Another link</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/* </div> */}
             </section>
             {/* ********************** */}
             <section id="Info">
-                <div className="row">
-                    <div className="col-md-4 col-sm-4 py-3 px-5 bottle">
-                        <img src="../public/images/milk.png" />
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-4 col-sm-4 py-3 px-5 bottle">
+                            <img src="../public/images/milk.png" />
 
-                    </div>
-                    {/* </div> */}
-                    {/* <div className="row"> */}
-                    <div className="col-md-8 col-sm-8">
+                        </div>
+                        {/* </div> */}
+                        {/* <div className="row"> */}
+                        <div className="col-md-8 col-sm-8">
 
-                        <h1>FRESH MILK</h1>
-                        <h1>
-                            <b>HOME DELIVERED
-                            </b>
-                        </h1>
-                        <div className="line"></div>
+                            <h1>FRESH MILK</h1>
+                            <h1>
+                                <b>HOME DELIVERED
+                                </b>
+                            </h1>
+                            <div className="line"></div>
 
-                        <div className="row py-4">
-                            <div className="col-md-6">
-                                <h3>100% NATURAL</h3>
-                                <p>Our cows are naturally grazed. We feed  <br />natural fodder and cattle feed.
-                                    Free of <br /> Growth hormone, Antibiotic, and<br /> Preservatives.
-                                </p>
+                            <div className="row py-4">
+                                <div className="col-md-6">
+                                    <h3>100% NATURAL</h3>
+                                    <p>Our cows are naturally grazed. We feed  <br />natural fodder and cattle feed.
+                                        Free of <br /> Growth hormone, Antibiotic, and<br /> Preservatives.
+                                    </p>
+                                </div>
+                                <div className="col-md-6">
+                                    <h2>FARM FRESH</h2>
+                                    <p>Our goal is to serve the freshest milk.<br /> Fresh milk is delivered from our farms<br />
+                                        to your home as quickly as
+                                        possible with<br /> strict cold-chain.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="col-md-6">
-                                <h2>FARM FRESH</h2>
-                                <p>Our goal is to serve the freshest milk.<br /> Fresh milk is delivered from our farms<br />
-                                    to your home as quickly as
-                                    possible with<br /> strict cold-chain.
-                                </p>
+                            <div className="row py-2">
+                                <div className="col-md-6">
+                                    <h3>HYGIENICALLY PRODUCED </h3>
+                                    <p>We pay close attention to our cows' hygiene. <br />They are washed regularly and
+                                        their health <br />is maintained very well.
+                                    </p>
+                                </div>
+                                <div className="col-md-6 ">
+                                    <h3>UNPROCESSED MILK  </h3>
+                                    <p>We believe in consuming fresh milk. It<br /> tastes better and rich in vitamins and<br /> minerals
+                                        compared to processed milk.
+                                    </p>
+                                </div>
                             </div>
+                            <div className="row py-2">
+                                <div className="col-md-6">
+                                    <h3>FROM HAPPY COWS
+                                    </h3>
+                                    <p>Our cows are treated with love and care.<br /> We provide quality fodder,
+                                        cattle feed, and <br />nice shelter for them to live happily.
+                                    </p>
+                                </div>
+                                <div className="col-md-6">
+                                    <h3>FREE OF ANTIBIOTIC & HORMONE
+                                    </h3>
+                                    <p>We don't use growth hormones or use milk from <br />cows that are treated with antibiotics.
+                                        Our milk<br /> is safe and healthy.
+                                    </p>
+                                </div>
+                            </div>
+                            <button className="button teal py-2">READ MORE</button>
                         </div>
-                        <div className="row py-2">
-                            <div className="col-md-6">
-                                <h3>HYGIENICALLY PRODUCED </h3>
-                                <p>We pay close attention to our cows' hygiene. <br />They are washed regularly and
-                                    their health <br />is maintained very well.
-                                </p>
-                            </div>
-                            <div className="col-md-6 ">
-                                <h3>UNPROCESSED MILK  </h3>
-                                <p>We believe in consuming fresh milk. It<br /> tastes better and rich in vitamins and<br /> minerals
-                                    compared to processed milk.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="row py-2">
-                            <div className="col-md-6">
-                                <h3>FROM HAPPY COWS
-                                </h3>
-                                <p>Our cows are treated with love and care.<br /> We provide quality fodder,
-                                    cattle feed, and <br />nice shelter for them to live happily.
-                                </p>
-                            </div>
-                            <div className="col-md-6">
-                                <h3>FREE OF ANTIBIOTIC & HORMONE
-                                </h3>
-                                <p>We don't use growth hormones or use milk from <br />cows that are treated with antibiotics.
-                                    Our milk<br /> is safe and healthy.
-                                </p>
-                            </div>
-                        </div>
-                        <button className="button teal py-2">READ MORE</button>
                     </div>
                 </div>
-
             </section>
             {/* **************** */}
             <section id="Divider py-5">
-                <div className="container-fluid">
-                    <div className="row py-5">
-                        <div className="col-md-6 px-5 py-5">
-                            <hr className="mt-0 mb-0 hr py-3" />
-                            <h3>MORE THAN </h3>
-                            <h1>NATURAL</h1>
-                            <div className="line"></div>
-                            <div className="text-cont">
-                                <p>It's not just about producing good quality natural<br /> milk from cows. It's about their happiness level. If<br /> cows are happy, they produce far better quality<br /> milk. Apart from natural fodder and cattle feed we<br /> provide, our cows are provided with good housing <br />and space to move around and graze. Their hygiene<br /> and health are also taken care of very well by<br /> experienced farmers.
-                                </p>
+                <div data-aos="zoom-out-left">
+                    <div className="container-fluid">
+                        <div className="row py-5">
+                            <div className="col-md-6 px-5 py-5">
+                                <hr className="mt-0 mb-0 hr py-3" />
+                                <h3>MORE THAN </h3>
+                                <h1>NATURAL</h1>
+                                <div className="line"></div>
+                                <div className="text-cont">
+                                    <p>It's not just about producing good quality natural<br /> milk from cows. It's about their happiness level. If<br /> cows are happy, they produce far better quality<br /> milk. Apart from natural fodder and cattle feed we<br /> provide, our cows are provided with good housing <br />and space to move around and graze. Their hygiene<br /> and health are also taken care of very well by<br /> experienced farmers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="Animal5">
+                                    <img src="../public/images/Animal5.jpg" />
+                                </div>
+                            </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div className="Animal5">
-                                <img src="../public/images/Animal5.jpg" />
+                    </div>
+                    {/* </hr> */}
+                        <div data-aos="zoom-out-right">
+                    <div className="row">
+                            {/* <div className="container-fluid"> */}
+                            <div className="col-md-6">
+                                <div className="Animal5">
+                                    <img src="../public/images/Animal6.jpg" />
+                                </div>
+
+                            </div>
+                            <div className="col-md-6">
+                                <h3>FOREST</h3>
+                                <h1>GRAZED</h1>
+                                <div className="line"></div>
+                                <div className="text-cont">
+
+                                    <p>When cows walk around and graze naturally in the<br /> open field, they are very healthy. Our Desi Cows are<br /> grazed in the forest during the day. They graze<br /> natural grass, leaves, and medicinal herbs. Grazing <br />cows in the open field under the sun not only keep<br /> cows healthy, but they also give us nutrition-rich<br /> milk. Consuming milk and milk products from forest<br /> grazed cows is known to have various health<br /> benefits.
+                                    </p>
+                                    <hr className="mt-0 mb-0 hr" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* </hr> */}
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="Animal5">
-                            <img src="../public/images/Animal6.jpg" />
-                        </div>
-
-                    </div>
-                    <div className="col-md-6">
-                        <h3>FOREST</h3>
-                        <h1>GRAZED</h1>
-                        <div className="line"></div>
-                        <div className="text-cont">
-
-                            <p>When cows walk around and graze naturally in the<br /> open field, they are very healthy. Our Desi Cows are<br /> grazed in the forest during the day. They graze<br /> natural grass, leaves, and medicinal herbs. Grazing <br />cows in the open field under the sun not only keep<br /> cows healthy, but they also give us nutrition-rich<br /> milk. Consuming milk and milk products from forest<br /> grazed cows is known to have various health<br /> benefits.
-                            </p>
-                            <hr className="mt-0 mb-0 hr" />
-                        </div>
-                    </div>
-                </div>
+                {/* </div> */}
+                {/* </div> */}
             </section >
             {/* **************** */}
             < section id="Process fes4-count " >
@@ -227,6 +237,7 @@ export const Home = () => {
             </section >
             {/* ***************** */}
             <section id="Our-passion">
+                {/* <div className="container-fluid"> */}
                 <div className="process-bg">
                     <div className="container fes4-count">
                         <div className="row">
@@ -301,116 +312,89 @@ export const Home = () => {
                     </div>
 
                 </div>
-
+                {/* </div> */}
             </section>
             {/* ***************** */}
             <section id="Products">
                 {/* product-1  */}
-                <div className="row py-5 px-4">
-                    <div className="col-lg-4 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-1.jpg" />
-                            <div className="port-overlay-count">
-                                <div className="port-title-count">
-                                    <h3>Organic Milk</h3>
-                                    <a>100 Natural</a>
+                <div className="container-fluid">
+                    <div data-aos="flip-left"
+                     data-aos-duration="2000">
+                    <div className="row py-5 px-4">
+                        <div className="col-lg-4 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-1.jpg" />
+                                <div className="port-overlay-count">
+                                    <div className="port-title-count">
+                                        <h3>Organic Milk</h3>
+                                        <a>100 Natural</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* product-2  */}
-                    <div className="col-lg-4 col-sm-6 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-2.jpg" />
+                        {/* product-2  */}
+                        <div className="col-lg-4 col-sm-6 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-2.jpg" />
+                            </div>
                         </div>
-                    </div>
 
-                    {/* product-3  */}
-                    <div className="col-lg-4 col-sm-6 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-3.jpg" />
+                        {/* product-3  */}
+                        <div className="col-lg-4 col-sm-6 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-3.jpg" />
+                            </div>
+                        </div>
+                        </div>
                         </div>
                     </div>
-                </div>
-                {/* product-4  */}
-                <div className="row px-4">
-                    <div className="col-md-4 col-sm-6 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-4.jpg" />
+                    {/* product-4  */}
+                        <div data-aos="flip-right"
+                         data-aos-duration="2000">
+                    <div className="row px-4">
+                        <div className="col-md-4 col-sm-6 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-4.jpg" />
+                            </div>
                         </div>
-                    </div>
-                    {/* product-5  */}
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-5.jpg" />
+                        {/* product-5  */}
+                        <div className="col-md-4 col-sm-4 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-5.jpg" />
+                            </div>
                         </div>
-                    </div>
-                    {/* product-6  */}
-                    <div className="col-md-4 col-sm-4 Page-section mt-80">
-                        <div className="padding-img margin-img">
-                            <img src="../public/images/prod-6.jpg" />
+                        {/* product-6  */}
+                        <div className="col-md-4 col-sm-4 Page-section mt-80">
+                            <div className="padding-img margin-img">
+                                <img src="../public/images/prod-6.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             {/* ************* */}
-            <div className="row">
-                <div className="col-md-6 px-5 py-5 background">
-                    <div className='wrapper'>
-                        <form onSubmit={handleSubmit} action="">
-                            <h1>Login</h1>
-                            <div className="input-box">
-                                <input
-                                    type="text"
-                                    placeholder="Email"
-                                    required
-                                    autoComplete="off"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                {/* <FontAwesomeIcon icon={faUser} /> */}
-                            </div>
-                            {errors.email && touched.email ? (
-                                <p className="form-error">{errors.email}</p>
-                            ) : null}
-                            <div className="input-box">
+            <div className="container-fluid">
+                <div data-aos="zoom-in">
+                <div className="row">
+                    <div className="col-md-6 px-5 py-5 background">
+                        <div className='wrapper'>
+                            {/* login form */}
+                            <Login />
+                        </div>
+                    </div>
 
-                                <input
-                                    type="Password"
-                                    placeholder="Password"
-                                    required
-                                    autoComplete="off"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                {/* <FontAwesomeIcon icon={faLock} /> */}
-                            </div>
-                            {errors.password && touched.password ? (
-                                <p className="form-error">{errors.password}</p>
-                            ) : null}
 
-                            <div className="remember-forgot">
-                                <label><input type="checkbox" />Remember me</label>
-                                <NavLink to="/Forgotpassword">Forgot Password ?</NavLink>
-                            </div>
-                            <button type="submit">Login</button>
-                            <div className="signup-link">
-                                <p>Don't have a account ?<NavLink to="/Signup">signup</NavLink></p>
-                            </div>
-                        </form>
+                    <div className="col-md-6">
+                        <div className="Map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55456.68148733089!2d75.42827526922721!3d22.193671920488622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39626e6050c0415d%3A0xd7792719ab9bbf98!2sAdarsh%20Gram%20Bikhron%2C%20Madhya%20Pradesh%20454552!5e0!3m2!1sen!2sin!4v1727438613659!5m2!1sen!2sin" width="100%" height="516px"></iframe>
+                        </div>
                     </div>
                 </div>
-
-
-                <div className="col-md-6">
-                    <div className="Map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55456.68148733089!2d75.42827526922721!3d22.193671920488622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39626e6050c0415d%3A0xd7792719ab9bbf98!2sAdarsh%20Gram%20Bikhron%2C%20Madhya%20Pradesh%20454552!5e0!3m2!1sen!2sin!4v1727438613659!5m2!1sen!2sin" ></iframe>
-                    </div>
                 </div>
             </div>
             {/* ************* */}
-            
+
 
         </>
     )

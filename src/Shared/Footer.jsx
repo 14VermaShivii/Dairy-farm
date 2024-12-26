@@ -1,10 +1,22 @@
 import React from "react";
-export const Footer  =()=>{
-    return(
-        <div className="Footer py-4 ">
-                <div className=" row footer px-4 py-4">
+export const Footer = () => {
+    return (
+        <div>
+            <div className="Footer py-3">
+                <div className="row">
+                    <div className="footer px-4 py-4">
+                    
+                        {/* <div className="logo-last"> */}
+                            <img src="../public/images/Logo2.jpg" width={150} height={150} />
+                        </div>
+                    </div>
+                {/* </div> */}
+                {/* </div> */}
 
-                    <div className="col-md-3 Title">
+                <div className=" row footer px-2 py-1">
+
+                    <div className="col-md-3 Title  ">
+
                         <b>Ghanshyam Dairy Farm</b><br />
                         AAdharsh Gram Bikhrone,Dhamnod<br />
                         Teh-Dharmpuri,Dist-Dhar,<br />
@@ -12,7 +24,7 @@ export const Footer  =()=>{
                         INDIA
 
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 ">
                         <h5>ABOUT US</h5>
                         HOME<br />
                         WHAT WE DO<br />
@@ -44,14 +56,19 @@ export const Footer  =()=>{
                         What is Ahimsa Milk ?<br />
                         Milk Pasteurization
                     </div>
-                </div>
-                <div className="row ">
-                    <div className="Lastfooter justify-content-end d-flex py-4">
-                      <p> ** Created by-SHIVANI VERMA<br/>
-                      <b>INDIA</b>
-                      </p>
-                    </div>
-                </div>
+                {/* </div> */}
             </div>
+            {/* <div className="container-fluid"> */}
+            {/* <div className="row "> */}
+                <div className="Lastfooter justify-content-end d-flex py-2">
+                    <p> ** Created by-SHIVANI VERMA<br />
+                        <b>INDIA</b>
+                    </p>
+                </div>
+            {/* </div> */}
+            </div>
+
+        </div>
+
     )
 }
